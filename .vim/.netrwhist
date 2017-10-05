@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/joe/.vim/bundle/vim-wip/plugin'
+let g:netrw_dirhist_2='/home/joe/tasks/vim'
+let g:netrw_dirhist_3='/home/joe/dot-files'

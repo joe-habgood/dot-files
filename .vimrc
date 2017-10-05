@@ -1,3 +1,8 @@
+execute pathogen#infect()
+call pathogen#helptags()
+syntax on
+filetype plugin indent on
+
 "
 " key mappings to reduce effort of moving fingers across keyboard
 "
@@ -8,13 +13,19 @@
 
 " in insert mode map esc to jj 
 imap jj <Esc>
-imap <Tab> <Space><Space><Space>
+inoremap <esc> <nop>
+onoremap p i(
 
 " map variants of h,j,k,l to replace left, down, up, right in all circumstances
 nmap <C-k> <C-W><Up>
 nmap <C-j> <C-W><Down>
 nmap <C-h> <C-W><Left>
 nmap <C-l> <C-W><Right>
+
+inoremap <up> <esc><C-w>ki
+noremap <up> <esc><C-w>k
+inoremap <down> <esc><C-w>ji
+noremap <down> <esc><C-w>j
 
 cmap <C-k> <Up>
 cmap <C-j> <Down>
